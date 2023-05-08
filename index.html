@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/main.css">
+    <title>Devera Store</title>
+</head>
+<body>
+    <header>
+        <h2 style="margin-left: 20px;">Devera Store</h2>
+        <ul style="margin-left: 20px;" class="header_list" >
+            <li> <a href="#">Hotest</a></li>
+            <li> <a href="#">Best Seller</a></li>
+            <li> <a href="#">Trending</a></li>
+            <li> <a href="#">Sport</a></li>
+            <li> <a href="#">Music</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <h2 >Add Product</h2>
+        <br>
+        <div class="content_box">
+
+            <div class="left">
+                <div class="input_group">
+                    <label class="input_group_label " for="name">Product name</label>
+                    <input class="w40  h36" type="text" name="" id="" placeholder="name">
+                </div>
+                <div class="input_group">
+                    <label class="input_group_label" for="price">Price</label>
+                    <input class="w40 h36" type="number" name="" id="" min="0">
+                </div>
+                <div class="input_group">
+                    <label class="input_group_label top_line"  for="desc">Description</label>
+                    <textarea class="w40" name="desc" placeholder="desc" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input_group">
+                    <label class="input_group_label" for="img">Image</label>
+                    <div class="box_image">Image</div>
+                </div>
+                <div class="input_group_country">
+                    <label>
+                      <input type="radio" name="country" value="china">China
+                    </label>
+                    <br>
+                    <label>
+                      <input type="radio" name="country" value="vietnam">VietNam
+                    </label>
+                  </div>
+                  
+                 
+            </div>
+            <div class="right">
+                <div class="input_group">
+                    <label class="input_group_label" for="category">Category</label>
+                    <select class="h36 w10" name="category" id="" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        
+                    </select>
+                    <br>
+                </div> 
+                <input type="checkbox" class="checkbox" name="" id="">Free ship
+                <br>
+                <button class="btn_create">Create</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Devera 2022
+    </footer>
+</body>
+</html>
