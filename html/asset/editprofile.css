@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.modal-content{
+    display: flex;
+    height: 90vh;
+    width: 1200px;
+    border: #ccc solid 1px;
+    margin: auto;
+}
+.sidebar{
+    flex:8%;
+    background-color: #FFC297;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.setting_back::before{
+    content: "";
+    display: inline-block;
+    background: url("./images/anh7.svg") center  no-repeat  transparent;
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top:4px;
+}
+.list-item_sidebar{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.list-item_settings{
+    margin-top: 54px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+    
+    /* align-items: center; */
+}
+.item_settings{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.list-item_settings i{
+    width: 30px;
+    height:30px;
+    margin-right: 0px;
+    transform: translateY(6px);
+}
+
+.item img{
+    height: 30px;
+
+}
+.item i{
+    font-size: 30px;
+    color: #FF7008;
+    cursor: pointer;
+}
+/* .item_last{
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+   margin-top: 200px;
+   z-index: 0;
+
+} */
+.item_last img{
+  height: 30px;
+  width: 30px;
+    
+}
+.choose{
+    flex:24%;
+    background-color: #fff;
+    border-right: #ccc solid 1px;
+    
+}
+.content{
+    flex:68%;
+    padding: 40px;
+}
+.avatar{
+    background: url("https://ben.com.vn/tin-tuc/wp-content/uploads/2021/10/hinh-nen-dep-dien-thoai.jpg") fixed center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.head_title{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.head_title img{
+    height: 90px;
+    width: 90px;
+    
+  
+}
+.settings{
+    margin: 20px 30px 20px 20px;
+    display: flex;
+    align-items: center;
+   
+}
+.setting_active{
+    font-weight: 700;
+    color: #FF7008;
+
+}
+.settings span{
+    margin-left: 20px;
+    font-size: larger;
+    font-weight: 700;
+}
+.input_group_label{
+    margin-bottom: 5px;
+    min-width: 120px; 
+  display: inline-block; 
+  
+}
+.input_group{
+    margin-bottom: 10px;
+    
+}
+.input_name{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+.input_name-item input{
+    padding-left: 20px;
+}
+.input_group input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    padding-left: 20px;
+}
+.input_group_select{
+    
+    width: 40%;
+  
+    padding-left: 20px;
+}
+.circle{
+    background-color: #FF7008;
+    height: 50px;
+    width: 50px;
+    /* transform: translateY(280px); */
+    margin-bottom: 20px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_group{
+    display: flex;
+    margin-top: 40px;
+    width: 40%;
+    justify-content: space-between;
+}
+.btn_group-item{
+    width: 120px;
+    height: 36px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+/* .btn_group-item:hover{
+    transform: rotate(20deg);
+    
+} */
+.cancel{
+
+    background-color: #fff;
+    border: #FF7008 solid 1px;
+    
+    color: #FF7008;
+}
+.save{
+  
+    background-color: #FF7008;
+    border: none;
+    margin-left: 20px;
+ 
+    color: #fff;
+}
+.input_name-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 260px;
+}
+.input_name-item input{
+    width: 100%;
+    
+}
+.email_input{
+    position: relative;
+}
+.box_email{
+    position: absolute;
+    top:50%;
+    right:24%;
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    border-radius: 2px;
+    display: flex;
+}
+.box_email img{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+.input_text{
+    height: 50px;
+    border: #ccc solid 1px;
+    border-radius: 5px; 
+}
+@media screen and (max-width: 768px) {
+   .choose{
+    display: none;
+   }
+   .sidebar{
+    flex:15%;
+    height: auto;
+    justify-content: space-between;
+   }
+   .content{
+    flex: 85%;
+   }
+   .modal-content{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    }
+    .input_name{
+    flex-direction: column;
+    }
+    .circle{
+        margin-bottom: 40px;
+    }
+   
+}
+.username-edit{
+    color: #000000;
+    font-size: medium;
+    /* transform: translateX(-10px); */
+    /* transform: translateY(10px); */
+    position: absolute;
+    top:40px;
+    right:32%;
+    /* margin-top: 10px; */
+}
+.content_head{
+    position: relative;
+}

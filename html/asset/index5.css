@@ -1,0 +1,91 @@
+.card-list{
+    position: relative;
+    margin-left: 50%;
+    margin-top: 200px;
+}
+.card-list:hover .card-list1{
+    transform: rotate(30deg);
+}
+.card-list:hover  .card-list2{
+    transform: rotate(60deg);
+}
+.card-list:hover .card-list3{
+    transform: rotate(90deg);
+}
+.card-list:hover .card-list4{
+    transform: rotate(120deg);
+}
+.card-list:hover .card-list5{
+    transform: rotate(150deg);
+}
+.card-list:hover .card-list6{
+    transform: rotate(180deg);
+}
+.card-list:hover .card-list7{
+    transform: rotate(210deg);
+}
+.card-list:hover .card-list8{
+    transform: rotate(240deg);
+}
+.card-list:hover .card-list9{
+    transform: rotate(270deg);
+}
+.card-list:hover .card-list10{
+    transform: rotate(300deg);
+}
+.card-list:hover .card-list11{
+    transform: rotate(330deg);
+}
+.card-list:hover .card-list12{
+    transform: rotate(360deg);
+}
+.card-list img
+{
+    position:absolute;
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transform-origin: bottom left;
+}
+.image-item{
+    object-fit:contain;
+    height: 300px;
+    width: 500px;
+    animation-name: opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+.circle{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    animation-name: quayvong;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes opacity {
+    0%   {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+   
+    100% {
+        opacity:1;
+        transform: scale(1.2);
+    }
+}
+@keyframes quayvong {
+    0%   {
+       transform: rotateY(360deg);
+    }
+   
+    100% {
+        transform: rotateY(0deg);
+    }
+}

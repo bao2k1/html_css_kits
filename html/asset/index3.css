@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ccc;
+    overflow: hidden;
+    letter-spacing: 0.6px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+
+}
+header{
+    height: 62px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    margin: 0;
+}
+.header_list{
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+.header_list li{
+    display: inline;
+    margin: 0px 20px 0px 0px;
+    
+}
+.header_list li a:hover{
+    color: red;
+}
+.header_list li a{
+    text-decoration: none;
+    color:#000;
+    font-size:larger;
+    font-weight: 600;
+}
+.section1{
+    display: flex;
+    flex-direction: column;
+    /* background:  linear-gradient(90deg, rgba(79,75,75,1) 0%, rgba(29,59,50,1) 58%, rgba(117,117,117,1) 100%); */
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    animation-name: colorChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+.section1_content h1{
+    margin-bottom: 10px;
+}
+.section1_content p{
+    font-weight: 100;
+    color: #c0bebe;
+}
+.section2{
+    height: 56px;
+    display: flex;
+    margin-top:20px;
+    border-bottom: #ccc solid 1px;
+    
+}
+.section2 h2{
+    margin-left: 80px;
+    padding-top: 4px;
+}
+
+.left{
+    flex:40%;
+}
+.right{
+    display: flex;
+    justify-content: end;
+    flex:60%;
+    margin-right: 80px;
+    /* transform: translateX(600px); */
+}
+.right_input{
+    width: 300px;
+    height: 36px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border:#ccc solid 2px;
+    padding-left: 10px;
+}
+.right_btn{
+    background-color: #000;
+    color:#fff;
+    height: 36px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.right_btn:hover{
+    background-color: rgb(3, 77, 40);
+    scale: 1.2;
+    cursor: pointer;
+}
+.section3{
+    display: flex;
+    margin: 20px 100px;
+    align-items: center;
+    text-align: center;
+     flex-wrap: wrap;
+}
+.card{
+    flex:1;
+    height: 400px;
+    width: 500px;
+    
+
+}
+.card img{
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+}
+.card img:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+.card p,
+.card h3{
+    transform: translateY(-100px);
+    color: #fff;
+    display: block;
+    margin-left: 50;
+}
+.box{
+width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: red;
+  animation-name: runaway;
+  animation-duration: 4s;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+}
+.box2{
+background: url("https://ben.com.vn/tin-tuc/wp-content/uploads/2021/10/hinh-nen-dep-dien-thoai.jpg") fixed center;
+width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: red;
+  animation-name: runaway2;
+  animation-duration: 4s;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+    0%   {background: linear-gradient(to right, pink, purple);}
+    25%  {background:linear-gradient(to right, red, blue);}
+    50%  {background:linear-gradient(to right, green, yellow);}
+    100% {background:linear-gradient(to right, black, white);}
+}
+  @keyframes runaway {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}@keyframes runaway2 {
+    0%   { right:0px; top:0px;}
+    25%  {right:200px; top:0px;}
+    50%  {right:200px; top:200px;}
+    75%  { right:0px; top:200px;}
+    100% { right:0px; top:0px;}
+}
