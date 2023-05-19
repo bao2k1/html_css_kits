@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Sự khác nhau giữa thẻ span và thẻ div</h2>
+    <span>Thẻ span</span>
+    <span>Thẻ span</span>
+    <span>Thẻ span</span>
+    <span>Thẻ span</span>
+    <div>Thẻ div</div>
+    <div>Thẻ div</div>
+    <div>Thẻ div</div>
+    <div>Thẻ div</div>
+    <h3>Tạo một table như bên dưới</h3>
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">Company</th>
+                <th colspan="2">Contact</th>
+                <th colspan="2">Country</th>
+              </tr>
+              
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">Dòng 1, ô 1</td>
+                <td colspan="2">Dòng 1, ô 2</td>
+                <td colspan="2">Dòng 1, ô 3</td>
+              </tr>
+              <tr>
+                <td colspan="2">Dòng 2, ô 1</td>
+                <td colspan="2">Dòng 2, ô 2</td>
+                <td colspan="2">Dòng 2, ô 3</td>
+              </tr>
+            </tbody>
+
+          </table>
+          
+    <h3>Tạo một html form như bên dưới</h2>
+        <form action="#" method="POST">
+            <div class="input_group">
+                <label class="input_group_label " for="name">Enter name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input_group">
+
+                <label class="input_group_label " for="password">Enter password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input_group">
+
+                <label class="input_group_label " for="email">Enter Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+          
+            <label style="margin-right: 28px;" for="gender">Enter Gender:</label>
+            <label>
+                <input  type="radio" name="gender" value="male">male
+            </label>
+              
+              <label>
+                <input type="radio" name="gender" value="female">female
+            </label>
+            <br>
+            <label class="input_group_label" for="country">Select Country</label>
+            <select style="margin-top: 10px;" class="input_group_label " name="country" id="" >
+                <option value="india">india</option>
+                <option value="vietnam">vietnam</option>
+                
+            </select>
+            <br>
+            <button type="submit">Register</button>
+          </form>
+          
+          
+</body>
+</html>

@@ -1,0 +1,154 @@
+body{
+    /* overflow: hidden; */
+    height: 100%;
+    padding: 70px 200px;
+    background: rgb(28,86,201);
+    background-image: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+}
+.content{
+    padding: 80px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 70px;
+    display: flex;
+    position: relative;
+    /* width: 80%; */
+}
+.content-left{
+    flex:50%;
+    display: flex;
+    flex-direction: column;
+}
+.content-right{
+    flex:50%;
+}
+.input_group_label{
+    margin-bottom: 10px;
+    min-width: 120px; 
+     display: inline-block; 
+  
+}
+.input_group{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.input_group_pass{
+    position: relative;
+}
+.forgot-label{
+    position: absolute;
+    color: #ccc;
+    top:-20px;
+    right: 28%;
+}
+.password_fill{
+    display: flex;
+}
+.input_pass::before{
+    content: "";
+    display: inline-block;
+    background: url("./images/clarity_eye-hide-line.svg") center  no-repeat  transparent;
+    
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:-6px;
+    right: 40px;
+}
+.input_group input{
+    height: 46px;
+    width: 70%;
+    border-radius: 5px;
+    border: #C0DBEA solid 1px;
+    padding-left: 10px;
+    background-color: #C0DBEA;
+    font-weight: 600;
+}
+.title-login{
+    font-size: 40px;
+    font-weight: 700;
+}
+.logo{
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: blueviolet;
+}
+.btn-regis{
+   /* margin-left: 130px; */
+   height: 46px;
+   color: #fff;
+   background-color: #D885A3;
+   border: none;
+   border-radius: 23px;
+   width: 150px;
+}
+.btn-regis:hover{
+    background-color: #da6d95;
+    cursor: pointer;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    width: 72%;
+    margin-top: 16px;
+}
+.social-btn{
+text-align: center;
+border: #C0DBEA solid 1px;
+border-radius: 40px;
+width: 125px;
+height: 50px;
+background-color: #fff;
+cursor: pointer;
+}
+.social-btn:hover{
+    transform: scale(1.1);
+}
+.para-with{
+    /* margin-left: 150px; */
+    color: #b1d7ec;
+}
+.signup{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+ 
+}
+.signup1{
+    color: #ccc;
+    margin-right: 10px;
+}
+.signup2{
+    color: #D885A3;
+    cursor: pointer;
+    
+}
+.box{
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: #b1d7ec;
+    height: 100%;
+    border-radius: 20px;
+    width: 30%;
+}
+.image{
+    display: flex;
+}
+.plant{
+    float: right;
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+.person{
+    position: absolute;
+    bottom: 40px;
+    right: 200px;
+}
+.btn-form{
+    width: 70%;
+    text-align: center;
+}

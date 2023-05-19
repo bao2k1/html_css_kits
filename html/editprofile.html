@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/editprofile.css">
+    <script
+    src="https://kit.fontawesome.com/8bcda2d10c.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="sidebar">
+            <div>
+
+                <div class="avatar">
+                    <!-- <p class="username-edit" id="username-edit"></p> -->
+                </div>
+               
+                <div class="list-item_sidebar">
+
+                    <div class="item">
+                        <img src="./asset/images/Vector.svg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./asset/images/anh2.svg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./asset/images/anh3.svg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./asset/images/anh4.svg" alt="">
+                    </div>
+                    <div class="item logout" id="logout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item_last">
+                   <div id="circle" class="circle">
+
+                       <img src="./asset/images/anh5.svg" alt="">
+                   </div>
+                        
+
+                        
+            </div>
+          </div>
+          <div id="choose" class="choose">
+                <div class="settings">
+                  <span id="setting_back"    class="setting_back">Settings</span>
+                </div>
+                <div class="list-item_settings">
+
+                    <div class="item_settings setting_active">
+                        <!-- <img src="./asset/images/edit.svg" alt=""> -->
+                        <i class="fa-solid fa-pen"></i>
+                        <span class="settings_item">Edit profile</span>
+                    </div>
+                    <div class="item_settings">
+                        <!-- <img src="./asset/images/noti.svg" alt=""> -->
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="settings_item">Notification</span>
+
+
+                    </div>
+                    <div class="item_settings">
+                        <!-- <img src="./asset/images/secu.svg" alt=""> -->
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="settings_item">Security</span>
+                    
+                    </div>
+                    <div class="item_settings">
+                        <i class="fa-solid fa-gear"></i>
+                        <!-- <img src="./asset/images/appear.svg" alt=""> -->
+                        <span class="settings_item">Appearance</span>
+
+                    </div>
+                    <div class="item_settings">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <!-- <img src="./asset/images/help.svg" alt=""> -->
+                        <span class="settings_item">Help</span>
+
+                    </div>
+                </div>
+          </div>
+          <div class="content">
+                <div class="content_head">
+                   <div class="head_title">
+                        <h2>Edit profile</h2>
+                        <img src="./asset/images/kits.svg" alt="">
+                        
+                   </div>
+                   <p class="username-edit" id="username-edit"></p>
+                </div>
+                <form id="edit-form" class="form" action="#" method="POST">
+                    <div class="input_name">
+
+                        <div class="input_name-item">
+                            <label class="input_group_name " for="firstname">FirstName</label>
+                
+                            <input  class="input_text" placeholder="Bao" type="text" id="firstname" name="firstname" >
+                        </div>
+                        <div class="input_name-item">
+                            <label  class="input_group_name " for="lastname">LastName</label>
+                            <input class="input_text" placeholder="Tran" type="text" id="lastname" name="lastname">
+                    </div>
+                    </div>
+                    <div class="input_group email_input">
+        
+                        <label class="input_group_label  " for="email">Email</label>
+                        <input class="input_text" placeholder="quangbao0205@gmail.com" class="" type="email" id="email" name="email">
+                        <div id="box_email" class="box_email">
+                            <img id="box_email-img" src="./asset/images/tick.svg" alt="">
+                        </div>
+                    </div >
+                  
+                    <div class="input_group">
+                        <label class="input_group_label " for="address">Address</label>
+                        <input id="address" class="input_text" placeholder="HCM Q12"  type="text" name="address">
+                    </div>
+                    <div class="input_group">
+                        <label class="input_group_label " for="contact">Contact Number</label>
+                        <input id="contact" class="input_text" placeholder="1234567890" type="text" name="context">
+                    </div>
+                    <br>
+                    <label class="input_group_label" for="country">City</label>
+                    <br>
+                    <select class="input_group_select input_text"   name="country" id="city" >
+                        <optgroup label="Chon nuoc">
+                         <option value="india">india</option>
+                            <option value="vietnam">vietnam</option>
+                         </optgroup>
+                    </select>
+                    <br>
+                    <div class="btn_group">
+                        
+                        <button  id="cancel-btn" class="cancel btn_group-item">Cancel</button>
+                        <button type="button" id="save-btn" class="save btn_group-item">Save</button>
+                    </div>
+                  </form>
+          </div>
+        </div>
+      </div>
+      <script src="./js/editprofile.js"></script>
+</body>
+</html>
